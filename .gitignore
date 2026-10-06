@@ -1,0 +1,25 @@
+# 虚拟环境
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# 运行产物
+data/output/
+data/work/
+logs/
+*.log
+
+# 本地配置与密钥（.env.example 要入库，.env 不要）
+.env
+config/config.json
+
+# 电子书本体（体积大，且多为有版权的资源，不入库）
+*.epub
+*.mobi
+*.azw3
+*.txt
+
+.DS_Store
+.idea/
+.vscode/

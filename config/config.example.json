@@ -1,0 +1,45 @@
+{
+  "output_dir": "data/output",
+  "work_dir": "data/work",
+  "log_level": "INFO",
+  "log_file": "logs/autoread.log",
+  "text": {
+    "chars_per_page": 500,
+    "tts_group_chars": 60,
+    "sentence_hard_limit": 160,
+    "strip_duplicate_heading": true
+  },
+  "tts": {
+    "engine": "auto",
+    "voice": "zh-CN-YunjianNeural",
+    "fallback_engine": "macos_say",
+    "macos_voice": "",
+    "edge_rate": "-12%",
+    "edge_pitch": "-2Hz",
+    "edge_volume": "+0%",
+    "edge_attempts": 3,
+    "edge_retry_backoff_seconds": 1.5,
+    "edge_python": "",
+    "edge_concurrency": 5,
+    "timeout_seconds": 240,
+    "batch_size": 24,
+    "format": "mp3",
+    "mp3_bitrate": "64k",
+    "sample_rate": 24000,
+    "trim_silence": true,
+    "trim_threshold_db": -45.0,
+    "trim_keep_ms": 30,
+    "edge_connect_timeout": 10,
+    "edge_receive_timeout": 60
+  },
+  "prosody": {
+    "enabled": true,
+    "base_pause_ms": 500,
+    "paragraph_pause_ms": 800,
+    "max_pitch_hz": 10.0,
+    "chapter_lead_in_ms": 350
+  },
+  "estimate": {
+    "cues_per_second": 1.5
+  }
+}
